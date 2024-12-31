@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes imga {
+    0% {
+        top: 9%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+#img {
+    left: 40%;
+    animation-name: imga;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    cursor: pointer;
+    animation-timing-function: ease-out;
+}
+
+@keyframes imga1 {
+    0% {
+        top: 9%;
+    }
+    100% {
+        top: -500%;
+    }
+}
+#img1 {
+    animation-name: imga1;
+    animation-duration: 22s;
+    animation-delay: 1s;
+    cursor: pointer;
+    animation-timing-function: ease-out;
+}
+
+@keyframes img2 {
+    0% {
+        right: -50%;
+    }
+    100% {
+        right: 38%;
+    }
+}
+#img2 {
+    top: -1%;
+    right: -50%;
+    animation: img2 6s ease-out 5s;
+}
+
+
+@media (max-width: 768px) {
+    @keyframes imga {
+        0% {
+            top: 16%;
+        }
+        100% {
+            top: -100%;
+        }
+    }
+    #img {
+        
+        left: 45%;
+        top:17%;
+        animation-name: imga;
+        animation-duration: 21s;
+    }
+
+    #img1 {
+        font-size: 8rem;
+        animation-duration: 18s;
+    }
+    @keyframes img2 {
+        0% {
+            right: -90%;
+            top:8.6%
+        }
+        100% {
+            right: -11%;
+            top:8.6%
+        }
+    }
+    #img2 {
+        top: 12%;
+        right: -90%;
+        
+        animation: img2 6s eas 5s;
+    }
+
+    #year {
+        font-size: 2.5rem;
+        left: 50%;
+        top: 60%;
+        margin-left: 20px;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    
+}
